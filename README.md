@@ -25,7 +25,7 @@ Given the previous example, we would not actually use a conversion rate of 10 US
 - Given our value of "not buying USDs from the trader", the price at which we buy USDs from the trader is really low, thus making this practice unprofitable.
 - When the trader buys USDs from our market, the buy price of USD will start to follow a curve dictated by this equation:
 
-  ![price equation](./images/price_equation.png)
+  <img src="https://github.com/dennisorlando/tase-documentazione/blob/main/images/price_equation.png" width=600/>
 
   where the X-Axis represents time in "ticks" passed after buy. If the trader sell to the market the equation is same but the target_price is below the current one, intuitively, the curve is reflected.
 - The fluctuations follow the equation above. When the actual price is close enough to target_price, the fluctuation changes to opposite direction (if it was the growing, it becomes descending and viceversa). This fluctuation continues (possibly to infinity) if the trader does not buy/sell within markets, but the magnitude decrease over time.
